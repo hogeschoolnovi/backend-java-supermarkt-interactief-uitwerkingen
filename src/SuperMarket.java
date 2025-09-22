@@ -5,7 +5,6 @@ public class SuperMarket {
     String name;
     List<Product> products;
 
-//        Dit is de simpele constructor zonder null checks
     public SuperMarket(String name, List<Product> products) {
         this.name = name;
         if (products == null){
@@ -15,6 +14,7 @@ public class SuperMarket {
         }
     }
 
+//    // Deze vier buy... methodes mogen verwijderd worden
 //    public void buyBread(int amount){
 //        buyItem(this.bread, amount);
 //    }
@@ -50,6 +50,6 @@ public class SuperMarket {
             }
         }
 //        Als er nks gevonden is
-        System.out.println(this.name + " does not have " + productName + " in stock");
+        System.out.println(this.name + " does not sell " + productName);
     }
 }
